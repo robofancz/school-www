@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Práce s textem</title>
+	</head>
+	<body>
+		<h1>Práce s textem</h1>
+		<h2>další příkazy pro práci s textem</h2>
+
+		<h2>Seznamy</h2>
+		<h3>nečíslované seznamy</h3>
+		<p> Používájí se většinou tam, kde nezáleží na pořadí položek </p>
+		<p> vytváří se pomocí párového příkazu ul (unordered list), jednotlivé položky se vytváří pomocí příkazu li (list item)<\)p>
+		<big>Nákupní seznam</big>
+		<ul type="disc">
+			<!-- možné hodnoty atributu type jsou: square, circle, disc-->
+			<li>Chléb</li>
+			<li>Mléko</li>
+			<li>Pivo</li>
+			<!-- do seznamu můžete vložit další seznam, čímž vytvoříte podrobnější dělení-->
+			<ul>
+				<li>Ale</li>
+				<li>IPA</li>
+				<li>Ležák</li>
+			</ul>
+			<li>Máslo</li>
+		</ul>
+
+		<h3>číslované seznamy</h3>
+		<big>jak dostat slona do lednice</big>
+		<ol type="">
+			<!-- možné hodnoty atributu type jsou: 1, a, A, I, i-->
+			<li>otevřu lednici</li>
+			<li>posunu krabici s mlékem</li>
+			<li>Vložím slona do lednice</li>
+			<li>zavřu lednici</li>
+		</ol>
+		<big>jak dostat do lednice žirafu:</big>
+		<ol start="5">
+		<!-- pomocí atributu start lze posunout číslování-->
+			<li>otevřu lednici</li>
+			<li>vyndám slona</li>
+			<li>vložím žirafu</li>
+			<ol type="a">
+				<li>nejprve ohnu krk</li>
+				<li>pohlídat ocásek</li>
+			</ol>
+			<li> zavřu lednici</li>
+		</ol>
+
+
+
+
+		
+
+		<!-- Fyzické formátování -->
+		
+		<br>
+		<b>tučný text</b><br>
+		<i>šikmé písmo</i><br>
+		<u>podtržené písmo</u><br>
+		<strike>přeškrtnuté písmo</strike><br><br>
+
+		<b><i><u><strike>každá část textu</strike> může mít </u> více </i> formátovacích </b> pokynů <br>	
+
+		<font color ="pink" size="50px" face="calibri"> Obrovský ružový text</font> <br>
+
+		<!-- Logické formátování
+			-text je formátován na základě jeho významu
+		-->
+		
+		<strong>Důležitý text</strong><br>
+		<em>zdůraznění textu</em><br>
+		<small>menší text</small><br>
+		<big>větší text</big><br>
+		<del>Tohle už neplatí</del><br>
+		<ins>Tohe je tu nově</ins><br>
+		<mark>highlited text</mark><br>
+		<sub>dolší index</sub>
+		<sup>horní index</sup>
+		<ins>Normální text</ins><br>
+
+
+
+
+
+
+		<h3>nadpis h3</h3>
+		<h6 style="color:blue; text-decoration: underline;">
+			nadpis h6
+		</h6>
+		<p align="justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam id dolor. Quisque porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean placerat. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Et harum quidem rerum facilis est et expedita distinctio. Quisque tincidunt scelerisque libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin in tellus sit amet nibh dignissim sagittis. Mauris metus. Suspendisse nisl. Phasellus rhoncus. Phasellus et lorem id felis nonummy placerat. Cras pede libero, dapibus nec, pretium sit amet, tempor quis.</p>
+
+		<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam id dolor. Quisque porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean placerat. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Et harum quidem rerum facilis est et expedita distinctio. Quisque tincidunt scelerisque libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin in tellus sit amet nibh dignissim sagittis. Mauris metus. Suspendisse nisl. Phasellus rhoncus. Phasellus et lorem id felis nonummy placerat. Cras pede libero, dapibus nec, pretium sit amet, tempor quis.</span>
+
+		<span Style="color: cyan; border: 3px solid grey; ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam id dolor. Quisque porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean placerat. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Et harum quidem rerum facilis est et expedita distinctio. Quisque tincidunt scelerisque libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin in tellus sit amet nibh dignissim sagittis. Mauris metus. Suspendisse nisl. Phasellus rhoncus. Phasellus et lorem id felis nonummy placerat. Cras pede libero, dapibus nec, pretium sit amet, tempor quis.</span><br><br>
+
+
+		<div style="width: 150px; height: 150px; background-color: green; border: 3px double brown">zebra</div>
+
+		<br>
+		<b>tučný text</b>
+		<i>šikmé písmo</i>
+		<u>podtržené písmo</u>
+		<strike>přeškrtnuté písmo</strike>
+	</body>
+</html>
