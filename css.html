@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>CSS</title>
+        <style>
+            /*prvek_HTML {
+                vlastnost1: hodnota1;
+                vlastnost2: hodnota2;
+                vlastnost3: hodnota3;
+            }
+            */
+            h3      {
+                text-decoration: underline;
+                color: blueviolet;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: aqua;
+                border: 10px;
+                border-color: black;
+                font: caption;
+                font-size: medium;
+                outline: auto;
+                outline-width: 5px;
+                outline-color: tomato;
+                outline-style: double;
+                background-size: auto;
+                background-blend-mode: darken;
+
+            }
+            p       {
+                text-decoration: underline;
+                color: blueviolet;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: violet;
+                border: 10px;
+                border-color: black;
+                font: italic;
+                font-size: medium;
+                outline: auto;
+                outline-width: 2px;
+                outline-color: black;
+                outline-style: double;
+                background-size: auto;
+                background-blend-mode: darken;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <h2 style="box-shadow: aliceblue; color: blueviolet; accent-color: pink; ">Cascading Style Sheets - Kaskádové styly</h2>
+        <p style="border-style: dotted; border-color: deeppink; border-width: 4px; background-color: aqua; padding: 10px; border-radius: 10px; font-size: 10px;">Formátovací jazyk pro popis způsobu zobrazení HTML prvků</p>
+        <p>Hlavním smyslem jazyka je oddělení vzhledu dokumentu od jeho struktury a obsahu</p>
+        <p>Jazyk CSS není schopen vytvořit objekt, pouze ho formátuje a tím pádem není schopen fungovat samostatné bez jazyka HTML</p>
+        <p>Jazyk CSS obsahuje pouze "vlastnosti" a "hodnotu" (narozdíl od HTML neobsahuje "příkazy"). Hodnota se vlastnosti přiřadí pomocí dvojtečky a jednotlivé vlastnosti jsou od sebe odděleny středníkem</p>
+        <p>Existují tří způsoby zápisu kaskádových stylů:</p>
+        <h3>1. Přímý styl</h3>
+        <p>Nejstarší, nejméně praktický a nejméně přehledný způsob zápisu, který se dnes používá jen velmi zřídka</p>
+        <p>idea oddělení formátu od obsahu zde ještě není zcela dpdržena</p>
+        <p>formátovací pokyny se aplikují pouze na jeden konkrétní objekt - výrazně pomalejší a méně přehledné než ostatní způsoby</p>
+        <p>pokyny se zapisují jako hodnota atributu style formátovaného prvku</p>
+        
+        <h2>21/11/2024</h2>
+        <h3>2. stylopis v hlavičce</h3>
+        <p><b>Poznámka: </b><br> Nekombinujeme více typů stylopisu dohromady!!! <br> Přímý styl má přednost před stylopisem v hlavičce a ten má přednost před externím stylopisem. Pokud je jeden prvek definován vícekrát platí definice přímého stylu. </p>
+        <p>Zapisuje se do hlavičky souboru dovnitř párového příkazu <b>style.</b></p>
+        <p>Definice platí pro všechny objekty daného typu nacházející se na stránce (... například pro všechny odstavce) </p>
+        <p>Objekt definujeme tak, že napíšeme jeho název (příkaz jazyka HTML bez špičatých závorek) a jeho vlastnosti uzavřeme do složených závorek(Každou vlastnost píšeme na nový řádek!)</p>
+    </body>
+</html>
