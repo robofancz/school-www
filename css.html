@@ -14,10 +14,10 @@
             */
             h3      {
                 text-decoration: underline;
-                color: blueviolet;
+                color: rgb(255, 0, 0);
                 text-align: center;
                 font-family: 'Times New Roman', Times, serif;
-                background-color: aqua;
+                background-color: rgb(0, 0, 0);
                 border: 10px;
                 border-color: black;
                 font: caption;
@@ -32,27 +32,28 @@
             }
             p       {
                 text-decoration: underline;
-                color: blueviolet;
+                color: rgb(43, 144, 226);
                 text-align: center;
                 font-family: 'Times New Roman', Times, serif;
-                background-color: violet;
+                background-color: rgb(49, 25, 49);
                 border: 10px;
                 border-color: black;
                 font: italic;
                 font-size: medium;
                 outline: auto;
                 outline-width: 2px;
-                outline-color: black;
+                outline-color: rgb(0, 0, 0);
                 outline-style: double;
                 background-size: auto;
                 background-blend-mode: darken;
             }
         </style>
+        <link rel="stylesheet" type="text/css" href="prvni.css">
     </head>
     <body>
         <h1>CSS</h1>
-        <h2 style="box-shadow: aliceblue; color: blueviolet; accent-color: pink; ">Cascading Style Sheets - Kaskádové styly</h2>
-        <p style="border-style: dotted; border-color: deeppink; border-width: 4px; background-color: aqua; padding: 10px; border-radius: 10px; font-size: 10px;">Formátovací jazyk pro popis způsobu zobrazení HTML prvků</p>
+        <h2 style="box-shadow: aliceblue; color: rgb(226, 43, 43); accent-color: pink; ">Cascading Style Sheets - Kaskádové styly</h2>
+        <p style="border-style: dotted; border-color: deeppink; border-width: 4px; background-color: rgb(0, 0, 0); padding: 10px; border-radius: 10px; font-size: 10px;">Formátovací jazyk pro popis způsobu zobrazení HTML prvků</p>
         <p>Hlavním smyslem jazyka je oddělení vzhledu dokumentu od jeho struktury a obsahu</p>
         <p>Jazyk CSS není schopen vytvořit objekt, pouze ho formátuje a tím pádem není schopen fungovat samostatné bez jazyka HTML</p>
         <p>Jazyk CSS obsahuje pouze "vlastnosti" a "hodnotu" (narozdíl od HTML neobsahuje "příkazy"). Hodnota se vlastnosti přiřadí pomocí dvojtečky a jednotlivé vlastnosti jsou od sebe odděleny středníkem</p>
@@ -69,5 +70,13 @@
         <p>Zapisuje se do hlavičky souboru dovnitř párového příkazu <b>style.</b></p>
         <p>Definice platí pro všechny objekty daného typu nacházející se na stránce (... například pro všechny odstavce) </p>
         <p>Objekt definujeme tak, že napíšeme jeho název (příkaz jazyka HTML bez špičatých závorek) a jeho vlastnosti uzavřeme do složených závorek(Každou vlastnost píšeme na nový řádek!)</p>
+        <h2>25/11/2024</h2>
+        <h3>Externí stylopis</h3>
+        <p>Definice vlastností prvků se zapisují do samostatného souboru s příponou .css</p>
+        <p>hlavní výhodou je, že tento soubor se dá připojit k více než jedné webové stránce a změna v tomto souboru se projeví na všech stránkách, které jsou na něj napojené</p>
+        <p>Připojení externího stylopisu se provádí v hlavičce  souboru pomocí nepárového příkazu link</p>
+        <p>struktura externího souboru: soubor má stejnou strukturu jako stylopis v hlavičce, jen neobsahuje párový příkaz style</p>
+        <p>externí stylopis nekombinujeme s ostatními typy stylopisů. Všechny ostatní zápisy mají přednost před externím stylopisem</p>
+
     </body>
 </html>
