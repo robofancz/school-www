@@ -8,14 +8,67 @@
     <style>
         body {
             background-color: grey;
+            
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .vyklad {
+            font-size: 18px;
+        }
+        .lorem_ipsum{
+            color: brown;
+        }
+        .poznamka {
+            border-style: dashed;
+            border-width: 1px;
+            border-color: black;
+            background-color: rgb(104, 167, 4);
+        }
+        .stin {
+            text-shadow: 3px 3px 3px rgb(56, 52, 52);
+        }
+        #identifikator {
+            width: 100px;
+            height: 110px;
+            border-radius: 6px;
+            padding: 10px;
+            border: 3px double plum;
+        }
+        h1,h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 3px 3px 3px rgb(56, 52, 52);
+        }
+        li p {
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <h1>Pokročilé způsoby definování objektů CSS</h1>
+    <h1 class="stin">Pokročilé způsoby definování objektů CSS</h1>
     <h2>Vlastní třídy</h2>
-    <p>Vlastní třída nám umožní definovat nový objekt, kterému dáme název a můžeme jeho vlastnosti připojit k libovolnému prvku jazyka HTML</p>
-    <p>Jedna vlastní třída může být připojena libovolnému množství různých prvků jazyka HTML</p>
-    <p>Jeden prvek může mít přiřazeno více vlastních tříd</p>
+    <p class="vyklad">Vlastní třída nám umožní definovat nový objekt, kterému dáme název a můžeme jeho vlastnosti připojit k libovolnému prvku jazyka HTML</p>
+    <p class="vyklad">Jedna vlastní třída může být připojena libovolnému množství různých prvků jazyka HTML</p>
+    <p class="vyklad">Jeden prvek může mít přiřazeno více vlastních tříd</p>
+    <br>
+    <h2>12/12/2024</h2>
+    <p class="lorem_ipsum">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ipsum reiciendis temporibus, similique sit qui, illo, nesciunt provident repellendus voluptatem magni blanditiis. Sed deserunt accusantium, praesentium et voluptas minima quisquam?</p>
+    <p class="poznamka stin">POZNÁMKA: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus suscipit vel porro iusto dolorem placeat quod voluptatem deleniti? Recusandae mollitia inventore adipisci eius, quasi laudantium consequuntur ut aut illum.</p>
+    <p class="lorem_ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque numquam repudiandae recusandae sed, debitis voluptates ducimus quis temporibus facere nostrum laudantium magnam eligendi sint et optio minima non cumque.</p>
+    <h2>Identifikátory</h2>
+    <div id="identifikator">prostor pro skript. Na stránce by se měl vždy vyskytovat jen jednou !!!</div>
+    <ul>
+        <li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatibus culpa maxime quibusdam praesentium, harum quos sequi dolor, dicta impedit sapiente velit delectus asperiores voluptates aspernatur ut, doloremque a quaerat.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem molestias, nostrum, quas magnam atque id officiis labore reprehenderit cum porro, explicabo similique quos pariatur culpa delectus dolores enim et qui?</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugiat ut quisquam consequuntur ad, minima vitae, nam nihil eligendi quidem quis at optio dolores voluptatum. Blanditiis, ex quia. Ad, quo!</p>
+        </li>
+    </ul>
 </body>
 </html>
