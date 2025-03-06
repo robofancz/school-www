@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        table {
+            width: 350px;
+            height: 250px;
+            border: 20px double lightcoral;
+            background-image: radial-gradient(blue,orange, violet);
+        }
+        td {
+            border: 1px solid white;
+            background-color: aquamarine;
+            opacity: 70%;
+            text-align: center;
+            padding: 15px;
+        }
+        th {
+            border: 1px solid white;
+            background-color: thistle;
+            opacity: 70%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabulky</h1>
+    <p>
+        Tabulka se vytváří pomocí párového příkazu Table. Skládá se ze řádků, které vytvoříme pomocí párového příkazu TR (table row) a každý řádek se skládá z buněk, tvořených párovým příkazem TD (table data) nebo z hlaviškových buněk tvořených párovým příkazem TH (table head)
+    </p>
+    <p>
+        při tvorbě tabullky musíme dobře strukturovat kód, aby data byla přehledná
+    </p>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+        </tr>
+    </table>
+
+    <h2>Stylování tabulky</h2>
+    <p>
+        Pokud nastavujeme vlastnosti tabulky jako velku, zpravidla je stylujeme v prvku TABLE (nejčastěji vzhled pozadí, rozměry, ohraničení, okraje, ...). Ne příliš často se nastavují vlastnosti řádků TR, ale běžnější bývá stylovat jednotlivé buňky nebo hlavičkové buňky (rozměry (platí bždy pro celý řádek nebo sloupec), vnitřní ohraničení, pozadí, vnitřní okraje, zarovnání pbsahu
+    </p>
+    <p>
+        Velmi často se používají vlastní třídy pro nastavení speciálních vlastností jednotlivých buňek
+    </p>
+
+    <h3>Spojování buňek</h3>
+    <p>
+        Buňky v tabulce nelze spojit, ale jedné buňce lze nastavit přesah přes více řádků nebo sloupců
+    </p>
+    <p>
+        Toto rozšíření se provádí pomocí atributu prvku TD, COLSPAN (více sloupců) a ROWSPAN (více řádků). Hodnota těchto atributů odpovídá počtu sloupců/řádků, přes které má buňka zasahovat. Buňku je možné rozšířit pouze do prava nebo dolů. Přebytečné buňky je potřeba následně z tabulky odstranit.
+    </p>
+
+    <table>
+        <tr>
+            <th colspan="3">1</th>
+            
+        </tr>
+        <tr>
+            <th>4</th>
+            <th rowspan="2" colspan="2">5</th>
+        </tr>
+        <tr>
+            <th rowspan="2">7</th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>11</th>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
