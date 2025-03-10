@@ -2,11 +2,23 @@ body {
     background-color: grey
 }
 table {
-    
+    border-color: orange;
+    border-width: 1px;
+    border-style: dashed;
 }
 td {
+    border-width: 5px;
+    border-style: double;
+    height: 100;
+    width: 100;
+}
+.pozadi1 {
+    background-image: url(/www/HTML_code/Styly/mosaic_background.jpg);
+}
+.pozadi2 {
+    background-image: url(/www/HTML_code/Styly/colorful_bird.jpg);
+}
+img {
+    width: 250px;
+}
 
-}
-th {
-    
-}
