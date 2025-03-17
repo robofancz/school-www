@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pozicování objektů</title>
+
+<style>
+    body {
+        background-color: grey;
+    }
+    .red_span {
+        color: red;
+        position: relative;
+        top: -20px;
+        left: 345px;
+    }
+    .blue_span {
+        color: blue;
+        position: relative;
+        top: 35px;
+        left: -345px;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Pozicování objektů</h1>
+    <p>
+        Ve standardním HTML se prvky zobrazují v pořadí, ve kterém jsou napsány ve zdrojovém kódu a není žádný způsob jak toto pořadí změnit. To stejné platí i pro pořadí prvků ve směru osy Z.
+    </p>
+    <h2>Relativní pozicování</h2>
+    <p>
+        Relativní pozicování se nastavuje pomocí atributu POSITION a hodnoty RELATIVE. Posun prvku se potom nejčastěji zadává pomocí atributů TOP a LEFT (atributy RIGHT a BOTTOM se používají méně často). Výchozím bodem souřadnicového systému je levý horní roh původního umístění objektu. Místo kde se prvek původně nacházel zůstane prázdné. Pozicovaný prvek se vždy nachází více vpředu než prvky, které pozicované nejsou (nikdy se nemohou dostat za ně). Pořadí pozicovaných prvků se dá měnit pomocí atributu Z-INDEX výchozí hodnota je 1 a prvek je tím víc vpředu čím vyšší hodnotu tohoto atributu nastavíme.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit <span class="red_span"> amet </span> consectetur adipisicing elit. Laboriosam esse ea <span class="blue_span"> fugiat </span> exercitationem quasi, accusamus ab, voluptatem incidunt expedita impedit quos, hic officia dignissimos saepe corrupti est autem culpa animi!
+    </p>
+    
+<h2>Absolutní pozicování</h2>
+
+</body>
+</html>
