@@ -10,6 +10,9 @@
     body {
         background-color: grey;
     }
+    h1,h2{
+        text-decoration: underline;
+    }
     .red_span {
         color: red;
         position: relative;
@@ -21,6 +24,51 @@
         position: relative;
         top: 35px;
         left: -345px;
+    }
+    .hory {
+        color: white;
+        background-color: darkslategrey;
+        position: absolute;
+        top: 445px;
+        left: 90px;
+    }
+    .lesy{
+        color: green;
+        background-color: brown;
+        position: absolute;
+        top: 475px;
+    }
+    .blue_rectangel{
+        background-color: aqua;
+        border: 5px;
+        width: 240px;
+        height: 160px;
+        border-width: 2px;
+        border-color: black;
+        border-style: dashed;
+    }
+    .red_rectangel{
+        background-color: rgb(255, 5, 5);
+        width: 240px;
+        height: 160px;
+        border-width: 2px;
+        border-color: black;
+        border-style: dashed;
+        position: relative;
+        top: -82px;
+        left: 122px;
+        z-index: 1;
+    }
+    .green_rectangel{
+        background-color: greenyellow;
+        width: 240px;
+        height: 160px;
+        border-width: 2px;
+        border-color: black;
+        border-style: dashed;
+        position: relative;
+        top: -164px;
+        left: 244px;
     }
 </style>
 
@@ -35,11 +83,33 @@
         Relativní pozicování se nastavuje pomocí atributu POSITION a hodnoty RELATIVE. Posun prvku se potom nejčastěji zadává pomocí atributů TOP a LEFT (atributy RIGHT a BOTTOM se používají méně často). Výchozím bodem souřadnicového systému je levý horní roh původního umístění objektu. Místo kde se prvek původně nacházel zůstane prázdné. Pozicovaný prvek se vždy nachází více vpředu než prvky, které pozicované nejsou (nikdy se nemohou dostat za ně). Pořadí pozicovaných prvků se dá měnit pomocí atributu Z-INDEX výchozí hodnota je 1 a prvek je tím víc vpředu čím vyšší hodnotu tohoto atributu nastavíme.
     </p>
 
+
+    
+
+
     <p>
         Lorem ipsum dolor sit <span class="red_span"> amet </span> consectetur adipisicing elit. Laboriosam esse ea <span class="blue_span"> fugiat </span> exercitationem quasi, accusamus ab, voluptatem incidunt expedita impedit quos, hic officia dignissimos saepe corrupti est autem culpa animi!
     </p>
     
-<h2>Absolutní pozicování</h2>
+    <h2>Absolutní pozicování</h2>
+    <p>
+       Absolutní pozicování se nastavuje pomocí atributu POSITION a hodnoty ABSOLUTE. Posun prvku se potom nejčastěji zadává pomocí atributů TOP a Left. Výchozím bodem součadnicového sustému je levý horní roh stránky nebo levý horní roh nadřazeného pozicovaného objektu. Na místo, kde se prvek původně nacházel se přesunou prvky, které byly v kódu za ním. Pozicováný prvek se vždy nachází ...... 
+    </p>
+
+
+    <p>
+        Za devatero <span class="hory">horami </span> a devatero <span class="lesy"> lesy </span> ...
+    </p>
+
+
+    <h2>Pozicování cvičení</h2>
+    <div class="blue_rectangel"></div>
+    <div class="red_rectangel"></div>
+    <div class="green_rectangel"></div>
+
+
+
+
 
 </body>
 </html>
