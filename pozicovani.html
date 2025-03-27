@@ -120,6 +120,50 @@
         top: 54px;
         left: 95px;
     }
+    .object{
+        height: 60px;
+        width: 80px;
+        border-radius: 30px;
+        background-image: linear-gradient(teal, cyan);
+        border: 5px ridge silver;
+        position: fixed;
+        right: 20px;
+        bottom: 40px;
+    }
+    .object a{
+        font-size: 40px;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    .hlavicka{
+        width: 100%;
+        height: 80px;
+        background-image: radial-gradient(pink, hotpink, orange);
+        border: 4px ridge silver;
+        text-align: center;
+        position: sticky;
+        top: 25px;
+        z-index: 10;
+    }
+    .hlavicka h1{
+        color: black;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 3px white;
+    }
+    .paticka {
+        width: 60%;
+        height: 40px;
+        background-image: repeating-linear-gradient(orange, blue, purple);
+        text-align: center;
+        position: sticky;
+        bottom: 25px;
+        z-index: 10;
+    }
+    .paticka h2{
+        color: black;
+        text-transform: capitalize;
+        text-shadow: 2px 4px 2px white;
+    }
 
 </style>
 
@@ -130,6 +174,11 @@
         Ve standardním HTML se prvky zobrazují v pořadí, ve kterém jsou napsány ve zdrojovém kódu a není žádný způsob jak toto pořadí změnit. To stejné platí i pro pořadí prvků ve směru osy Z.
     </p>
     <h2>Relativní pozicování</h2>
+
+    <div class="hlavicka">
+        <h1>Hlavička stránky</h1>
+    </div>
+
     <p>
         Relativní pozicování se nastavuje pomocí atributu POSITION a hodnoty RELATIVE. Posun prvku se potom nejčastěji zadává pomocí atributů TOP a LEFT (atributy RIGHT a BOTTOM se používají méně často). Výchozím bodem souřadnicového systému je levý horní roh původního umístění objektu. Místo kde se prvek původně nacházel zůstane prázdné. Pozicovaný prvek se vždy nachází více vpředu než prvky, které pozicované nejsou (nikdy se nemohou dostat za ně). Pořadí pozicovaných prvků se dá měnit pomocí atributu Z-INDEX výchozí hodnota je 1 a prvek je tím víc vpředu čím vyšší hodnotu tohoto atributu nastavíme.
     </p>
@@ -172,11 +221,38 @@
         Nějáký text
     </p>
 
+<br><br><br><br>
+
+    <h2>Fixní pozice objektu</h2>
+    <p>
+        Nastavuje se pomocí atributu POSITION a hodnoty FIXED. Objekt se nachází neustále na stejném místě na stránce. Používá se u prvků, které nemají "odscrollovat" z obrazovky.
+    </p>
+<br><br>
+
+    <div class="object">
+        <a href="" class="pevny">🦄</a>
+    </div>
+
+
+
+
+
+
+    <h2>Pozice objektu - STICKY</h2>
+    <p>
+        Nastavuje se pomocí atributu POSITION a hodnoty STICKY. Objekt se standardně pohybuje s ostatními prvky až do chvíle, kdy by se měl dostat "mimo obrazovku". V tu chvíli se přichytí k okraji stránky a zůstane viditelný.
+    </p>
+
+
     
     
     
 
+<div class="paticka">
+    <h2>Patička</h2>
+</div>
 
+<br><br><br>
 
 </body>
 </html>
