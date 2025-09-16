@@ -1,3 +1,9 @@
+<?php
+    define('pozdrav', 'Ahoj světe!');
+    define('pozdrav2', 'Ahoj PHP!');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +17,15 @@
 
     <?php
         echo "<u>Hello World!</u>";
+        echo pozdrav;
+        echo pozdrav2;
     ?>
 
     <P>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam officia necessitatibus maiores laudantium porro doloremque corporis beatae repellat blanditiis, doloribus nostrum dolor, dicta, odit ratione molestiae maxime nesciunt ipsa voluptate.
     </P>
+    
+
     
 </body>
 </html>
