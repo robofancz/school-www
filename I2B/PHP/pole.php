@@ -141,7 +141,18 @@ $ovoce = "../data/ovoce.txt";
         print_r($kraje);
         echo "<br>";
 
-        // Funkce Explode ...
+        
+    ?>
+    <h4>Funkce Explode</h4>
+    <?php
+        // explode umožní vytvořit z řetězce s jasně daným oddělovačem pole, kde potom můžete pracovat s jednotlivými prvky
+
+        $text = "škoda, VW, Audi, BMW, Mercedes, Toyota";
+        echo $text;
+        echo "<br>";
+        // Syntaxe: explode(oddělovač, zdroj dat, maximální počet částí)
+        $auta = explode(", ", $text);
+        print_r($auta);
     ?>
 
 
