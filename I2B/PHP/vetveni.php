@@ -31,17 +31,22 @@
         // Jedno větvení může obsahovat jen jedno IF
 
     // Příklad: Rozhodněte jestli je hodnota $cislo kladná a vypište ji
-    $cislo = 1;
+    // $cislo = 1;
+    // $cislo = -1;
+    $cislo = 0;
     if ($cislo == 0)
     {
-        echo("Proměná číslo je nula");
+        echo("Cislo se = " . $cislo);
+        echo("<br>Proměná číslo je nula");
     }
     elseif ($cislo > 0)
     {
+        echo("Cislo se  = " . $cislo);
         echo("Proměnná číslo je kladné číslo");
     }
     else
     {
+        echo("Cislo se  = " . $cislo);
         echo("Proměnná číslo je záporné číslo");
     }
 ?>
