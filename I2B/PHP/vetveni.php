@@ -71,9 +71,46 @@
     {
         echo ($cislo . " je liché a kladné");
     }
-    else
+    elseif ($cislo == 0)
     {
         echo ($cislo . "je 0");
+    }
+    else
+    {
+        echo ("špatně zadaná hodnota");
+    }
+?>
+<h2>Větvení pomocí vloženého větvení</h2>
+<?php
+    $cislo3 = 42;
+    echo ("Hodnota proměnné " . '$cislo3' .  " je: "  . $cislo3 . "<br>");
+    if($cislo3>0)
+    {
+        echo ("Proměnná je kladná a ");
+        if ($cislo3%2==0)
+        {
+            echo ("sudá.");
+        }
+        else
+        {
+            echo ("lichá.");
+        }
+    }
+    elseif($cislo3<0)
+    {
+        echo ("Proměnná je záporná a ");
+        if ($cislo3%2==0)
+        {
+            echo ("sudá.");
+        }
+        else
+        {
+            echo ("lichá.");
+        }
+    }
+    else
+    {
+        echo ("špatně zadaná hodnota");
     }
 ?>
 
