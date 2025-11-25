@@ -108,10 +108,43 @@
             echo ("lichá.");
         }
     }
+    elseif($cislo=0)
+    {
+        echo("Zadaná hodnota je 0");
+    }
     else
     {
         echo ("špatně zadaná hodnota");
     }
+
+    echo ("<br>");
+
+    $promenna = 12;
+    if ($promenna>=-500 && $promenna<=500)
+    {
+        if ($promenna%6==0)
+        {
+            echo("<p style = 'color: red'>$promenna</p>");
+        }
+        elseif ($promenna%7==0)
+        {
+            echo ("<p style = 'color: blue'>$promenna</p>");
+        }
+        else
+        {
+            echo ("Zadaná hodnota není dělitelná 6 ani 7");
+        }
+    }
+    else
+    {
+        echo ("Zadaná hodnota není v poli -500, 500");
+    }
+?>
+
+<h2 class>Switch</h2>
+
+<?php
+    
 ?>
 
 </body>
