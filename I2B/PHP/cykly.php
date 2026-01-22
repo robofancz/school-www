@@ -11,6 +11,25 @@
             background-color: black;
             color: white;
         }
+        table{
+            width: 500px;
+            border: double 3px gray;
+            background-color: azure;
+            padding: 3px;
+        }
+        td{
+            padding:1.5px;
+            background-color: goldenrod;
+            border:1px solid black;
+            text-allign: center;
+        }
+        td:hover{
+            background-color: green;
+        }
+        th{
+            background-color: red;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -88,8 +107,126 @@
         }
         
 
-        
+        echo("<br><hr>");
+
     ?>
+    <h3>Cyklus WHILE</h3>
+    <?php
+        /*
+        Teoretický zápis:
+
+        start;
+        while(podmínka)
+        {
+            Příkazy; //Provede se, pokud je podmínka splněna
+
+            změna;
+        }
+        */
+
+        //Pomocí cyklu WHILE vypište hodnoty proměnně $f od -10 do 10
+        $f=-10;
+        while ($f <= 10) {
+            echo ($f . " | ");
+            $f++;
+        }
+
+        echo("<br><hr>");
+
+        //Pomocí cyklu WHILE vypište hodnoty proměnné $g od -6 do 8, změna při jednom průchodu cyklem je 0,1.
+        $g=-6;
+        while ($g <= 8) {
+            $g = round($g,2);
+            echo ($g ." | ");
+            $g=$g+0.1;
+        }
+
+
+        echo("<br><hr>");
+
+        //Zjistěte, kolik hodnot je na vypsáno v minulé úloze
+        $h=-6;
+        $count=0;
+        while ($h <= 8) {
+            $h = round($h,2);
+            echo ($h ." | ");
+            $h=$h+0.1;
+            $count++;
+        }
+
+        echo ("<br><br>" . $count);
+
+        echo("<br><hr>");
+
+    ?>
+
+    <h2>Cykly kontrolující podmínku na konci</h2>
+    <p>
+        Tento cyklus proběhne vždy alespoň jednou, bez ohledu na to, jestli byla podmínka splněna. Toho se využívá například pro naplnění chybových hlášek nebo proměnných s jiným obsahem.
+    </p>
+    <h3>Cyklus DO WHILE</h3>
+    <?php
+        /*
+        Teoretický zápis:
+
+        start;
+        do
+        {
+            příkazy;    //provede se vždy alespoň jednou
+
+            změna;
+        }
+        while(podmínka)
+        */
+    ?>
+
+<br><hr>
+<?php
+    $pocet = 0;
+    $i=0;
+    while ($i <= 10000) {
+        if ($i%4==0&&$i%6==0) {
+            $nasobky[] = $i;
+            $pocet++;
+        }
+        $i++;
+    }
+    echo ("pocet: $pocet <br>");
+    // echo (count($nasobky) . "<br>");
+    // echo (sizeof($nasobky));
+
+    echo("<hr>");
+
+
+
+
+    /*Pole z minulé úlohy vypíšeme tak, že se hodnoty zobrazí v tabulce, která se automaticky zalomí za každou osmou honotou. Tabulka bude obsahovat hlavičku, ve které bude popis zobrazených hodnot. Veškeré prvky tabulky formátujte pomocí css v hlavičce.
+    - příkazy: <table>, <tr>, <td>, <th>, colspan
+    */
+    $count=0;
+    $sloupce=10;
+    echo ("<table>");
+    echo("<th colspan='$sloupce'>Společné násobky 4 a 6</th>");
+        echo("<tr>");
+        
+
+    foreach ($nasobky as $key=>$value) {
+        echo("<td>");
+        echo($value);
+        echo("</td>");
+        $count++;
+        if ($count%$sloupce==0)
+        {
+            echo("</tr><tr>");
+        }
+
+    }
+        echo("</tr>");
+    echo("</table>");
+
+?>
+
+    
     
 </body>
 </html>
