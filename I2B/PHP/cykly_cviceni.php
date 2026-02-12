@@ -125,8 +125,11 @@
             $teplota++;
            } while ($teplota < 0);
         }
-        else{
+        elseif($teplota==0){
             echo ("Teplota je 0.");
+        }
+        else{
+            echo("Špatně zadaná hodnota");
         }
 
         
