@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formuláře</title>
     <link rel="stylesheet" href="../css/base.css">
+    <style>
+        label{
+            color: red;
+        }
+        table{
+            background-color: orange;
+            border: black dotted 2px;
+        }
+        td{
+            border:black 2px dotted;
+            text-align: right;
+        }
+        th{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     
@@ -52,9 +68,109 @@
         Používá se pro nespecificý (obecný) typ řetězce. 
     </p>
 
-    <form action="#" method="get">
-        <input type="text">
+   
+    <br>
+    
+    <br>
+    
+    <br>
+    <form id="" action="#" method="get">
+        <table>
+            <tr>
+                <th>Formulář</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="FirstName">Jméno: </label>
+                </td>
+                <td>
+                    <input type="text" id="FirstName" name="FirstName" maxlength="20" required placeholder="John">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="SurName">Příjmení: </label>
+                </td>
+                <td>
+                    <input type="text" id="SurName" name="SurName" maxlength="30" required placeholder="Doe">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Heslo: </label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" required minlength="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="day">Oblíbený den: </label>
+                </td>
+                <td>
+                    <input type="radio" name="day" id="day" value="parek">Pátek <br>
+                    <input type="radio" name="day" id="day" value="sobota" checked>Sobota <br>
+                    <input type="radio" name="day" id="day" value="nedele">Neděle <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="souhlas" id="souhlas"><label for="souhlas"> Souhlasím s tím být puppy boy 🥵🐶</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="year">Rok Narození:</label>
+                </td>
+                <td>
+                    <input type="number" name="year" id="year" min="1900" max="2026" step="1" placeholder="rok narození ...." required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="count">Počet: </label>
+                </td>
+                <td>
+                    0<input type="range" name="count" id="count" min="0" max="20">20
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Datum: </label>
+                </td>
+                <td>
+                    <input type="date" name="date" id="date" min="2026-02-01">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="time">Čas: </label>
+                </td>
+                <td>
+                    <input type="time" name="time" id="time" min="09:00" max="17:00" step="900">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="datetime">Datum a cas: </label>
+                </td>
+                <td>
+                    <input type="datetime-local" name="datetime" id="datetime" value="2026-02-14T06:07">
+                </td>
+            </tr>
+        </table>
     </form>
 
+    
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
