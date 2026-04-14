@@ -159,6 +159,35 @@
                     <input type="datetime-local" name="datetime" id="datetime" value="2026-02-14T06:07">
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label for="vzkaz">Napište nám</label>
+                </td>
+                <td>
+                    <textarea name="vzkaz" id="vzkaz" cols="25" rows="6" maxlenght="120" placeholder="Nazor"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ovoce" >Oblíbené ovoce</label>
+                </td>
+                <td>
+                    <select name="ovoce" id="ovoce">
+                        <option value="jablko">Jablko</option>
+                        <option value="hruska">Hruška</option>
+                        <option value="banan">Banán</option>
+                        <optgroup>
+                            <option value="kiwi">Kiwi</option>
+                            <option value="mango">Mango</option>
+                            <option value="tresen">Třešeň</option>
+                        </optgroup>
+                        <optgroup>
+                            <option value="sevstka">švestka</option>
+                            <option value="ananas">Ananas</option>
+                        </optgroup> 
+                    </select>
+                </td>
+            </tr>
         </table>
     </form>
 
