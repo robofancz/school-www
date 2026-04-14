@@ -1,0 +1,29 @@
+.obal       {   display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+
+            }
+table       {   text-align: left;
+                border: 2px double grey;
+                background-color: azure;
+            }
+td,th       {   border: 1px solid black;
+                padding: 4px;
+            }
+th          {   text-align: center;
+                color: goldenrod;
+                text-transform: uppercase;
+            }/* CSS Document */
+.button{
+    background-color: white;
+}
+.button:hover{
+    background-color: aqua;
+}
+.select{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: lightgray;
+}
