@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: red;
+}
+table{
+    text-align: left;
+    background-color: black;
+    border: rgb(12, 255, 223) inset 2px;
+    border-radius: 5px;
+}
+td,th{
+    border:palegreen 2px inset;    
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.center{
+    text-align: center;
+}
+.nahoru{
+    vertical-align: top;
+}
+select{
+    overflow: auto;
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px inset rgb(12, 255, 223);
+}
+select:hover{
+    background-color: #880000;
+}
+input{
+    background-color: black;
+    border: 2px inset rgb(12, 255, 223);
+    border-radius: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:hover{
+    background-color: #880000;
+}
+input[type=text], input[type=date]{
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 4px;
+}
+input[type=radio]{
+    scale: 1.5;
+    margin: 6px;
+    accent-color: orange;
+}
+input[type=submit], input[type=reset], button{
+    color: rgb(253, 81, 12);
+    cursor: pointer;
+    border: 2px inset rgb(12, 255, 223);
+    transition: 0.5s;
+}
+textarea{
+    color: rgb(253, 81, 12);
+    cursor: pointer;
+    border: 2px inset rgb(12, 255, 223);
+    border-radius: 5px;
+    background-color: black;
+    overflow: auto;
+    padding: 2px;
+}
+textarea:hover{
+    transition: 0.5s;
+    background-color: #880000;
+}
+input[type=submit]{
+    color: rgb(253, 81, 12);
+    cursor: pointer;
+    border: 2px inset rgb(12, 255, 223);
+    border-radius: 5px;
+    background-color: black;
+    overflow: auto;
+    padding: 2px;
+}
+button{
+    color: rgb(253, 81, 12);
+    cursor: pointer;
+    border: 2px inset rgb(12, 255, 223);
+    border-radius: 5px;
+    background-color: black;
+    overflow: auto;
+    padding: 5px;
+    width: 150px;
+}
+
+
+
+

@@ -3,3 +3,39 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+label{
+    color: red;
+}
+table{
+    text-align: left;
+    background-color: #2c2c2cff;
+    border: white dotted 2px;
+}
+td,th{
+    border:white 2px dashed;    
+    padding: 4px;
+}
+.center{
+    text-align: center;
+}
+.nahoru{
+    vertical-align: top;
+}
+select{
+    overflow: auto;
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #2c2c2cff;
+    color: white;
+}
+
+
+
+
