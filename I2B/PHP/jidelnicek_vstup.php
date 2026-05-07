@@ -66,7 +66,7 @@
 
             $file = fopen("../data/jidlo.csv", "a");
             fwrite($file, $zaznam);
-            // fclose($file;)
+            fclose($file);
         ?>
     </div>
 </body>
